@@ -1,0 +1,28 @@
+# Build
+app/build/
+build/
+.gradle/
+*.apk
+*.zip
+*.jar
+
+# IDE
+.idea/
+*.iml
+.artifacts/
+
+# Local
+local.properties
+debug-backup/
+tmpmob/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules/
+website/node_modules/
+website/dist/
+
+# Gradle wrapper jar is already tracked
