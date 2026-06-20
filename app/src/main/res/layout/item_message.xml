@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingTop="6dp" android:paddingBottom="6dp">
+    <TextView android:id="@+id/tv_system" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:background="@drawable/badge_lv_bg" android:gravity="center" android:paddingStart="10dp" android:paddingEnd="10dp" android:paddingTop="4dp" android:paddingBottom="4dp" android:text="系统消息" android:textColor="@color/on_surface_variant" android:textSize="12sp" android:visibility="gone" />
+    <LinearLayout android:id="@+id/ll_normal" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal">
+        <FrameLayout android:id="@+id/frame_avatar_left" android:layout_width="36dp" android:layout_height="36dp" android:layout_marginEnd="8dp" android:background="@drawable/circle_avatar_bg" android:outlineProvider="background" android:clipToOutline="true">
+            <ImageView android:id="@+id/iv_avatar_left" android:layout_width="36dp" android:layout_height="36dp" android:contentDescription="发送者头像" android:scaleType="centerCrop" />
+        </FrameLayout>
+        <LinearLayout android:id="@+id/ll_content" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+            <TextView android:id="@+id/tv_sender_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2dp" android:text="昵称" android:textColor="@color/on_surface_variant" android:textSize="11sp" />
+            <TextView android:id="@+id/tv_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="240dp" android:paddingStart="12dp" android:paddingEnd="12dp" android:paddingTop="8dp" android:paddingBottom="8dp" android:text="消息内容" android:textColor="@color/on_surface" android:textSize="15sp" />
+            <TextView android:id="@+id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="12:00" android:textColor="@color/on_surface_variant" android:textSize="11sp" />
+        </LinearLayout>
+        <FrameLayout android:id="@+id/frame_avatar_right" android:layout_width="36dp" android:layout_height="36dp" android:layout_marginStart="8dp" android:background="@drawable/circle_avatar_bg" android:outlineProvider="background" android:clipToOutline="true">
+            <ImageView android:id="@+id/iv_avatar_right" android:layout_width="36dp" android:layout_height="36dp" android:contentDescription="我的头像" android:scaleType="centerCrop" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

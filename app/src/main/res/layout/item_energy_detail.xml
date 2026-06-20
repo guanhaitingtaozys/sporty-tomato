@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground" android:gravity="center_vertical" android:orientation="horizontal"
+    android:paddingStart="16dp" android:paddingEnd="16dp" android:paddingTop="14dp" android:paddingBottom="14dp">
+    <TextView android:id="@+id/tv_energy_amount" android:layout_width="72dp" android:layout_height="wrap_content" android:text="+150" android:textColor="@color/gain_green" android:textSize="18sp" android:textStyle="bold" />
+    <TextView android:id="@+id/tv_source_desc" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:layout_weight="1" android:text="步数转换" android:textColor="@color/on_surface" android:textSize="14sp" />
+    <TextView android:id="@+id/tv_time_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12:30" android:textColor="@color/on_surface_variant" android:textSize="12sp" />
+</LinearLayout>

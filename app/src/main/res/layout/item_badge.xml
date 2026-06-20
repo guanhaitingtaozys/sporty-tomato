@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="6dp"
+    app:cardBackgroundColor="@color/surface" app:cardCornerRadius="12dp" app:cardElevation="3dp" app:cardUseCompatPadding="true">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_horizontal" android:orientation="vertical" android:padding="16dp">
+            <FrameLayout android:layout_width="64dp" android:layout_height="64dp" android:background="@drawable/circle_avatar_bg" android:outlineProvider="background" android:clipToOutline="true">
+                <ImageView android:id="@+id/iv_badge_icon" android:layout_width="64dp" android:layout_height="64dp" android:contentDescription="勋章图标" android:scaleType="centerCrop" android:src="@drawable/circle_shape" />
+            </FrameLayout>
+            <TextView android:id="@+id/tv_badge_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="勋章名称" android:textColor="@color/on_surface" android:textSize="16sp" android:textStyle="bold" />
+            <TextView android:id="@+id/tv_badge_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:gravity="center" android:text="勋章描述" android:textColor="@color/on_surface_variant" android:textSize="12sp" />
+            <TextView android:id="@+id/tv_unlock_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="未解锁" android:textColor="@color/secondary" android:textSize="11sp" />
+        </LinearLayout>
+    </FrameLayout>
+</androidx.cardview.widget.CardView>

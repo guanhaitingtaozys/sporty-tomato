@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="选择数据迁移方向" android:textColor="@color/on_surface" android:textSize="18sp" android:textStyle="bold" />
+    <com.google.android.material.button.MaterialButton android:id="@+id/btn_download_from_cloud" style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginTop="16dp" android:gravity="center" android:text="从云端获取数据" android:textColor="@color/primary" android:insetTop="0dp" android:insetBottom="0dp" />
+    <com.google.android.material.button.MaterialButton android:id="@+id/btn_upload_to_cloud" style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginTop="12dp" android:layout_marginBottom="8dp" android:gravity="center" android:text="上传至云端" android:textColor="@color/primary" android:insetTop="0dp" android:insetBottom="0dp" />
+</LinearLayout>

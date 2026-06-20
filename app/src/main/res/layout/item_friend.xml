@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_marginStart="16dp" android:layout_marginTop="4dp" android:layout_marginEnd="16dp" android:layout_marginBottom="4dp"
+    android:background="@drawable/card_friend_bg" android:elevation="2dp" android:gravity="center_vertical" android:orientation="horizontal"
+    android:outlineProvider="background" android:padding="12dp">
+    <FrameLayout android:layout_width="48dp" android:layout_height="48dp">
+        <ImageView android:id="@+id/iv_avatar" android:layout_width="48dp" android:layout_height="48dp" android:background="@drawable/avatar_placeholder_small" android:contentDescription="好友头像" android:scaleType="centerCrop" />
+        <TextView android:id="@+id/tv_unread_badge" android:layout_width="20dp" android:layout_height="20dp" android:layout_gravity="top|end" android:background="@drawable/badge_lv_bg" android:gravity="center" android:textColor="@color/background" android:textSize="10sp" android:textStyle="bold" android:visibility="gone" />
+    </FrameLayout>
+    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:layout_weight="1" android:orientation="vertical">
+        <TextView android:id="@+id/tv_nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="好友昵称" android:textColor="@color/on_surface" android:textSize="16sp" android:textStyle="bold" />
+        <TextView android:id="@+id/tv_remark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="备注名" android:textColor="@color/on_surface_variant" android:textSize="13sp" android:visibility="gone" />
+        <TextView android:id="@+id/tv_last_active" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="最近活跃：刚刚" android:textColor="@color/on_surface_variant" android:textSize="11sp" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center_vertical|end" android:orientation="vertical" android:minWidth="60dp">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal">
+            <View android:id="@+id/dot_online_status" android:layout_width="8dp" android:layout_height="8dp" android:layout_marginEnd="6dp" android:background="@drawable/dot_offline" />
+        </LinearLayout>
+        <TextView android:id="@+id/tv_short_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="ID:000000" android:textColor="@color/on_surface_variant" android:textSize="11sp" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/btn_message" android:layout_width="48dp" android:layout_height="36dp" android:layout_marginStart="8dp" android:background="@drawable/badge_lv_bg" android:gravity="center" android:orientation="horizontal" android:visibility="gone">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="聊天" android:textColor="@color/background" android:textSize="12sp" android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
