@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:padding="20dp">
+    <LinearLayout android:id="@+id/ll_search_area" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:gravity="center_vertical" android:orientation="horizontal">
+        <EditText android:id="@+id/et_search_id" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:background="@drawable/edit_text_bg" android:hint="输入好友短ID或手机号" android:inputType="text" android:maxLength="11" android:paddingStart="14dp" android:paddingEnd="14dp" android:textColor="@color/on_surface" android:textColorHint="@color/on_surface_variant" android:textSize="14sp" />
+        <Button android:id="@+id/btn_search" android:layout_width="wrap_content" android:layout_height="48dp" android:layout_marginStart="8dp" android:backgroundTint="@color/primary" android:minWidth="56dp" android:text="搜索" android:textColor="@color/background" android:textSize="14sp" />
+    </LinearLayout>
+    <TextView android:id="@+id/tv_search_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="通过 6 位数字短 ID 快速寻找运动伙伴" android:textColor="@color/on_surface_variant" android:textSize="12sp" />
+    <LinearLayout android:id="@+id/ll_user_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:layout_marginTop="24dp" android:gravity="center" android:orientation="vertical" android:visibility="gone">
+        <View android:id="@+id/iv_avatar_placeholder" android:layout_width="56dp" android:layout_height="56dp" android:background="@drawable/avatar_placeholder" />
+        <TextView android:id="@+id/tv_target_nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:gravity="center" android:text="用户昵称" android:textColor="@color/on_surface" android:textSize="16sp" android:textStyle="bold" />
+        <TextView android:id="@+id/tv_target_short_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:gravity="center" android:text="ID: 000000" android:textColor="@color/on_surface_variant" android:textSize="12sp" />
+    </LinearLayout>
+    <EditText android:id="@+id/et_verify_message" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:background="@drawable/edit_text_bg" android:gravity="top" android:hint="发送验证信息（选填）" android:inputType="textMultiLine" android:maxLength="30" android:maxLines="3" android:minHeight="80dp" android:padding="12dp" android:textColor="@color/on_surface" android:textColorHint="@color/on_surface_variant" android:textSize="14sp" />
+    <TextView android:id="@+id/tv_message_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="0/30" android:textColor="@color/on_surface_variant" android:textSize="12sp" />
+    <Button android:id="@+id/btn_send_request" android:layout_width="match_parent" android:layout_height="52dp" android:layout_marginTop="20dp" android:background="@drawable/btn_primary_rounded" android:backgroundTint="@null" android:gravity="center" android:text="发送好友申请" android:textColor="@color/background" android:textSize="16sp" android:textStyle="bold" android:elevation="4dp" />
+    <TextView android:id="@+id/tv_result" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_gravity="center" android:textColor="@color/primary" android:textSize="14sp" android:visibility="gone" />
+</LinearLayout>

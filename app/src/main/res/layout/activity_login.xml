@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="32dp">
+    <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1.5" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="运动的番茄" android:textColor="@color/on_surface" android:textSize="32sp" android:textStyle="bold" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="运动浇灌每一颗番茄" android:textColor="@color/on_surface_variant" android:textSize="16sp" />
+    <View android:layout_width="80dp" android:layout_height="80dp" android:layout_marginTop="32dp" android:background="@drawable/ic_tomato_placeholder" />
+    <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.8" />
+    <TextView android:id="@+id/tv_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="账号登录" android:textColor="@color/on_surface" android:textSize="20sp" android:textStyle="bold" android:layout_marginBottom="20dp" />
+    <EditText android:id="@+id/et_phone" android:layout_width="match_parent" android:layout_height="52dp" android:background="@drawable/edit_text_bg" android:hint="请输入手机号" android:inputType="phone" android:maxLength="11" android:paddingStart="16dp" android:paddingEnd="16dp" android:textColor="@color/on_surface" android:textColorHint="@color/on_surface_variant" android:textSize="16sp" />
+    <EditText android:id="@+id/et_password" android:layout_width="match_parent" android:layout_height="52dp" android:layout_marginTop="12dp" android:background="@drawable/edit_text_bg" android:hint="请输入密码（6-20位）" android:inputType="textPassword" android:maxLength="20" android:paddingStart="16dp" android:paddingEnd="16dp" android:textColor="@color/on_surface" android:textColorHint="@color/on_surface_variant" android:textSize="16sp" />
+    <EditText android:id="@+id/et_nickname" android:layout_width="match_parent" android:layout_height="52dp" android:layout_marginTop="12dp" android:background="@drawable/edit_text_bg" android:hint="设置昵称" android:inputType="text" android:maxLength="20" android:paddingStart="16dp" android:paddingEnd="16dp" android:textColor="@color/on_surface" android:textColorHint="@color/on_surface_variant" android:textSize="16sp" android:visibility="gone" />
+    <Button android:id="@+id/btn_submit" android:layout_width="match_parent" android:layout_height="52dp" android:layout_marginTop="24dp" android:background="@drawable/btn_primary_bg" android:text="登录" android:textColor="#FFFFFF" android:textSize="18sp" android:textStyle="bold" />
+    <TextView android:id="@+id/tv_switch_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:padding="8dp" android:text="没有账号？立即注册" android:textColor="@color/primary" android:textSize="14sp" />
+    <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" />
+    <TextView android:id="@+id/tv_guest_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:padding="8dp" android:text="访客模式体验" android:textColor="@color/on_surface_variant" android:textSize="14sp" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:gravity="center" android:text="登录即表示同意《用户协议》和《隐私政策》" android:textColor="@color/on_surface_variant" android:textSize="12sp" />
+</LinearLayout>
