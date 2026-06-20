@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.SportyTomato" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorOnPrimary">@color/background</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="android:statusBarColor">@color/primary</item>
+    </style>
+    <style name="ShapeAppearance_Dialog" parent="ShapeAppearance.Material3.Corner.ExtraLarge">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">28dp</item>
+    </style>
+    <style name="Theme_SportyTomato_Dialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnSurface">@color/on_surface</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance_Dialog</item>
+        <item name="buttonBarPositiveButtonStyle">@style/StyledPositiveButton</item>
+        <item name="buttonBarNegativeButtonStyle">@style/StyledNegativeButton</item>
+    </style>
+    <style name="StyledPositiveButton" parent="Widget.Material3.Button.TextButton">
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="rippleColor">@color/primary</item>
+    </style>
+    <style name="StyledNegativeButton" parent="Widget.Material3.Button.TextButton">
+        <item name="android:textColor">@color/on_surface_variant</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+</resources>
